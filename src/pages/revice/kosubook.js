@@ -13,14 +13,20 @@ export default () => {
           フロントエンド実装工数をなるべく下げるタメの本 <br></br>修正箇所一覧
         </Title>
         <ul>
-          {/* <li>
-            p1
+          <li>
+            p5
             <ul style={{ marginLeft: "2.4rem" }}>
-              <li>誤</li>
-              <li>正</li>
+              <li>誤: ブラウザの種類によっては実装の可能性や</li>
+              <li>正: ブラウザの種類によっては実装難易度や</li>
             </ul>
-          </li> */}
-          該当箇所はありません。
+          </li>
+          <li>
+            p13
+            <ul style={{ marginLeft: "2.4rem" }}>
+              <li>誤: チームとしては無いでしょう。。</li>
+              <li>正: チームとしては無いでしょう。</li>
+            </ul>
+          </li>
         </ul>
       </Section>
     </Layout>
