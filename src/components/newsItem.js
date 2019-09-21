@@ -19,6 +19,7 @@ const Wrapper = styled.div`
   color: #555555;
   border-radius: 4px;
   padding: 0.8rem 1.2rem;
+  margin-top: 0.8rem;
 `
 
 const Title = styled.h2`
