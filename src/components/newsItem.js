@@ -21,7 +21,11 @@ const Wrapper = styled.div`
   padding: 0.8rem 1.2rem;
 `
 
-const Title = styled.h2``
+const Title = styled.h2`
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+`
 
 const StyledTitle = styled(Link)`
   text-decoration: none;

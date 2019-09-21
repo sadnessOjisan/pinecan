@@ -36,4 +36,7 @@ const Title = styled.h1`
   text-align: center;
   font-size: 3.6rem;
   margin-bottom: 1.6rem;
+  @media (max-width: 768px) {
+    font-size: 2.4rem;
+  }
 `
