@@ -12,7 +12,7 @@ const IndexPage = props => {
     <Layout>
       <Section>
         <SEO title="Home" />
-        <Title>技術書典7で頒布しました！</Title>
+        <Title>技術書典7で頒布中</Title>
         <Books>
           <BookCover>
             <Image filename="kosubook" />
@@ -28,6 +28,10 @@ const IndexPage = props => {
                 こちら
               </NormalLink>
             </Text>
+            <Text>
+              修正は
+              <StyledLink to="./revice/kosubook">こちら</StyledLink>
+            </Text>
           </BookCover>
           <BookCover>
             <Image filename="modalbook" />
@@ -42,6 +46,10 @@ const IndexPage = props => {
               <NormalLink href="https://pinecan.booth.pm/items/1560348">
                 こちら
               </NormalLink>
+            </Text>
+            <Text>
+              修正は
+              <StyledLink to="./revice/modalbook">こちら</StyledLink>
             </Text>
           </BookCover>
         </Books>
@@ -72,7 +80,7 @@ const Title = styled.h1`
   color: #555555;
   text-align: center;
   font-size: 3.6rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.6rem;
 `
 
 const Books = styled.div`
@@ -92,6 +100,10 @@ const Text = styled.p`
 `
 
 const NormalLink = styled.a`
+  color: #2da4d5;
+`
+
+const StyledLink = styled(Link)`
   color: #2da4d5;
 `
 
