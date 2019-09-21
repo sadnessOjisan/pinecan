@@ -87,11 +87,17 @@ const Books = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 const BookCover = styled.div`
   width: 40%;
-  /* height: 425px; */
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-bottom: 3.2rem;
+  }
 `
 
 const Text = styled.p`
