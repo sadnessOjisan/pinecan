@@ -16,9 +16,33 @@ const IndexPage = props => {
         <Books>
           <BookCover>
             <Image filename="kosubook" />
+            <Text>
+              本書の説明・目次は
+              <NormalLink href="https://techbookfest.org/event/tbf07/circle/5138644771799040">
+                こちら
+              </NormalLink>
+            </Text>
+            <Text>
+              購入は
+              <NormalLink href="https://pinecan.booth.pm/items/1562438">
+                こちら
+              </NormalLink>
+            </Text>
           </BookCover>
           <BookCover>
             <Image filename="modalbook" />
+            <Text>
+              本書の説明・目次は
+              <NormalLink href="https://techbookfest.org/event/tbf07/circle/5138644771799040">
+                こちら
+              </NormalLink>
+            </Text>
+            <Text>
+              購入は
+              <NormalLink href="https://pinecan.booth.pm/items/1560348">
+                こちら
+              </NormalLink>
+            </Text>
           </BookCover>
         </Books>
       </Section>
@@ -31,7 +55,9 @@ const IndexPage = props => {
       <Section>
         <Title>About Me</Title>
         <p>連絡・質問はこちらから</p>
-        <a href="https://twitter.com/sadnessOjisan">@sadnessOjisan</a>
+        <NormalLink href="https://twitter.com/sadnessOjisan">
+          @sadnessOjisan
+        </NormalLink>
       </Section>
     </Layout>
   )
@@ -58,6 +84,15 @@ const Books = styled.div`
 const BookCover = styled.div`
   width: 40%;
   /* height: 425px; */
+`
+
+const Text = styled.p`
+  margin-top: 1.6rem;
+  font-size: 1.6rem;
+`
+
+const NormalLink = styled.a`
+  color: #2da4d5;
 `
 
 export const pageQuery = graphql`
